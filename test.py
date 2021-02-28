@@ -14,7 +14,7 @@ def main():
         print(line)
         f.write('\n' + line)
         f.flush()
-        sleep(5)
+        sleep(300)
 
 def getLive():
     return s.get('https://api.holotools.app/v1/live').json()
