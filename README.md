@@ -1,4 +1,5 @@
 # holoview-tracker
+
 the thing to count the viewcounts for [redacted]
 
-even i don't know how it works yet
+outputs in format ('yyyy-mm-dd- HH:MM:SS', [('Channel name', 'Channel id', current viewers), ...]) for as many lines as it does
