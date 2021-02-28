@@ -49,6 +49,10 @@ for y in range(1, len(table)):
         else:
             newTable[y][x] = ''
 
+for y in range(len(newTable) - 1, 0, -1):
+    if all(v == '' for v in newTable[y][1:]):
+        del newTable[y]
+
 for x in newTable:
     print(*x, sep=',')
     wfile.write(','.join(str(y) for y in x) + '\n')
