@@ -1,6 +1,7 @@
 *.json
 *.txt
 *.csv
+*.xlsx
 
 .vscode/
 
