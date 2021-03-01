@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 from copy import deepcopy
 from pprint import pprint
 
+startTime = datetime.now()
 table = [x.split(',') for x in open('out.csv', encoding='utf-8').read().splitlines()]
 table.insert(1, [(datetime.strptime(table[1][0], '%Y-%m-%d %H:%M:%S') - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M:%S')] + ([''] * (len(table[0]) - 1)))
 table.append([(datetime.strptime(table[len(table) - 1][0], '%Y-%m-%d %H:%M:%S') + timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M:%S')] + ([''] * (len(table[0]) - 1)))
@@ -56,3 +57,5 @@ for y in range(len(newTable) - 1, 0, -1):
 for x in newTable:
     print(*x, sep=',')
     wfile.write(','.join(str(y) for y in x) + '\n')
+
+print('took: ' + str(datetime.now() - startTime))
