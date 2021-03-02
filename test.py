@@ -1,7 +1,5 @@
-from pprint import pprint, pformat
 from requests.sessions import Session
 
-import os
 from time import sleep
 from datetime import datetime
 
