@@ -2,8 +2,12 @@
 
 the thing to count the viewcounts for [redacted]
 
-outputs in format ('yyyy-mm-dd- HH:MM:SS', [('Channel name', 'Channel id', current viewers), ...]) for as many lines as it does
+##usage
 
-parse outputs csv with columns timestamp and viewcount for the channel
+make collect to collect the data
 
-parse2 takes in parse's output and only reports the peak of every stream and removes the blank lines
+when you're done make parse to parse to csv
+
+out.csv is just all of the viewership numbers
+
+outtop.csv is the top from each stream when it happened
