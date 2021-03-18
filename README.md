@@ -2,7 +2,7 @@
 
 the thing to count the viewcounts for [redacted]
 
-##usage
+## usage
 
 make collect to collect the data
 
