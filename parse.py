@@ -22,7 +22,7 @@ for x in f:
         else:
             thisLineList += ['']
 
-    print(line, *thisLineList, sep=',')
+#    print(line, *thisLineList, sep=',')
     wfile.write(line + ',' + ','.join(thisLineList) + '\n')
 
 print('took: ' + str(datetime.now() - startTime))

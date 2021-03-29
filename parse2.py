@@ -66,7 +66,7 @@ for y in range(len(newTable) - 1, 0, -1):
         del newTable[y]
 
 for x in newTable:
-    print(*x, sep=',')
+#    print(*x, sep=',')
     wfile.write(','.join(str(y) for y in x) + '\n')
 
 print('took: ' + str(datetime.now() - startTime))
